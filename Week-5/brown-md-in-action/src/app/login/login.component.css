@@ -1,0 +1,46 @@
+.frm-login {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .frm-login-panel {
+    border: 1px solid lightgray;
+    padding: 40px;
+  }
+  .frm-login-header {
+    background-color: #3f51b5;
+  }
+  .frm-login-toolbar {
+    background-color: #3f51b5;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+  }
+  .frm-login-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .btn-login {
+    background-color: #3f51b5;
+    color: white;
+  }
+  .frm-login-actions {
+    text-align: right;
+  }
+  /* Global */
+  .wrapper {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .parent{
+      width: 100%;
+  }
+  .help{
+      padding-top: 40px;
+      padding-left: 30px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid lightslategray;
+      height: 900px;
+  }
