@@ -1,0 +1,15 @@
+.menu {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+  padding-top: 10px;  
+  display: block;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+}
