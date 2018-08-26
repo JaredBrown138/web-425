@@ -1,0 +1,61 @@
+.parent {
+  height: 600px;
+}
+.left {
+  background-color: rgb(245, 245, 245);
+}
+.right {
+  background-color: rgb(241, 241, 241);
+}
+.header {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+}
+.header > input {
+  width: 300px;
+}
+.header > div > p {
+  width: 100px;
+  display: inline-block;
+}
+.box {
+  padding: 40px;
+  width: 80%;
+  margin-left: 20px;
+  border: 1px solid darkgray;
+  text-align: left;
+}
+.box > app-order {
+  padding: 10px;
+}
+.left > .box {
+  text-align: left;
+  width: 200px;
+}
+.card{
+  width: 20%;
+  top: 50px;
+  margin: auto;
+  min-width: 288px;
+}
+form > button{
+  left: 70%;
+  color: #3f51b5;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+mat-form-field{
+  display: block;
+  width: 280px;
+}
+h3{
+  color: #3f51b5;
+  padding-top: 10px;
+}
+mat-list{
+  margin-left: 20px;
+  padding-bottom: 353px;
+}
