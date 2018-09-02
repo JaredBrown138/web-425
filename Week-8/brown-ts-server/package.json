@@ -1,0 +1,12 @@
+{
+    "name": "brown-ts-server",
+    "description": "Exercise 8.2",
+    "private": true,
+    "dependencies": {
+        "@types/express": "^4.16.0",
+        "@types/node": "^10.9.4",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "typescript": "^3.0.3"
+    }
+}

@@ -1,0 +1,27 @@
+
+{
+    "Users": [
+        {
+            "name": "Joe Ferguson",
+            "email": "thebestjoe@joe.com",
+            "address": "123 Cool Street, Nice Town, OH, 1234567",
+            "phone": "1231234321",
+            "orders": [
+                {
+                    "service": "keyboardCleaning",
+                    "pendingTotal": "45.00",
+                    "serviceRequestEstimate": {
+                        "request": "Broken Power Button on 2015 Macbook Pro! Help!"
+                    },
+                    "EstimateResponse": {
+                        "partsCost": "150.00",
+                        "hours": "2",
+                        "hoursCost": "100.00"
+                    }
+                }
+            ]
+        }
+    ] 
+}
+
+
