@@ -1,0 +1,37 @@
+<mat-toolbar class="menu" role="header" color="primary">
+    <mat-toolbar-row>
+        <a mat-button class="toolbar__icon-button mat-button" routerLink="home" routerLinkActive="active">
+            <span class="logo" style="margin-left: 5px !important;">Bob's Computer Repair</span>
+        </a>
+        <button *ngIf="switchService.getCustomerView()" class="option" mat-button class="mat-button" routerLink="orders" routerLinkActive="active">
+            Submit Order
+        </button>
+        <button *ngIf="switchService.getEmployeeView()" class="option" mat-button class="mat-button" routerLink="pendingorders" routerLinkActive="active">
+            Pending Work Orders
+        </button>
+        <div fxFlex></div>
+        <h5 class="viewTitle" *ngIf="switchService.getEmployeeView()">Employee View</h5>
+        <h5 class="viewTitle" *ngIf="switchService.getCustomerView()">Customer View</h5>
+        <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="switchService.setView('emp')">
+                <span class="buffer">
+                    <mat-icon *ngIf="switchService.getEmployeeView()">check_box</mat-icon>
+                    <mat-icon *ngIf="!switchService.getEmployeeView()">check_box_outline_blank</mat-icon>
+                </span>
+                <span>Employee View</span>
+            </button>
+            <button mat-menu-item (click)="switchService.setView('cus')">
+                <span class="buffer">
+                    <mat-icon *ngIf="switchService.getCustomerView()">check_box</mat-icon>
+                    <mat-icon *ngIf="!switchService.getCustomerView()">check_box_outline_blank</mat-icon>
+
+                </span>
+                <span>Customer View</span>
+            </button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
